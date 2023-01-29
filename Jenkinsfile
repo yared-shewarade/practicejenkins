@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Cloning Git') {
             steps {
-                git([url: 'https://github.com/yared-shewarade/practicejenkins.git', branch:'main', credentialsId: 'jenkins_yared'])
+                git([url: 'https://github.com/yared-shewarade/practicejenkins.git', branch:'main', credentialsId: 'jenkins_ssh_key'])
             }
         }
         stage('Building image') {
